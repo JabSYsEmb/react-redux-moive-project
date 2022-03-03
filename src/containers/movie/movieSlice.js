@@ -24,7 +24,7 @@ const moviesSlice = createSlice({
         addToBookmark(state, action) {
             state.bookmark.push(action.payload);
         },
-        remove(state, action) {
+        removeBookmark(state, action) {
             state.bookmark.pop(action.payload);
         }
     },
@@ -44,4 +44,5 @@ const moviesSlice = createSlice({
     }
 });
 
+export const { addToBookmark, removeBookmark } = moviesSlice.actions;
 export default moviesSlice.reducer;
