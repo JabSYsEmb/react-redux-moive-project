@@ -10,9 +10,9 @@ This project will test your skills using Postman to explore the API and get the 
 - Once you fetch data or anything it should be stored in the state management system you are using. Optimize your network calls.
 
 ### Home Page
-- Show a section for the most popular movies.
-- Show a section for the most trending movies.
-- Tha ability to bookmark the movies.
+- ~~Show a section for the most popular movies.~~
+- ~~Show a section for the most trending movies.~~
+- ~~Tha ability to bookmark the movies.~~
 ### Navbar 
 - Universal nav that is shown on every page of the website.
 - Include a Home button that moves the user to the home page.
@@ -30,13 +30,13 @@ This project will test your skills using Postman to explore the API and get the 
 - Anything you want to add.
 
 ### Movies Page
-- Display a list of movies.
-- Display the movie poster
-- Display the movie name
-- Display the movie rating
+- ~~Display a list of movies.~~
+- ~~Display the movie poster~~
+- ~~Display the movie name~~
+- ~~Display the movie rating~~
 - Display the movie genre
-- Tha ability to bookmark the movie.
-- The ability to search for a specific movie.
+- ~~Tha ability to bookmark the movie.~~
+- ~~The ability to search for a specific movie.~~
 - Once you click on a movie, it will move you to the singe page of that movie.
 - Use lazy loading functionality. 
 
