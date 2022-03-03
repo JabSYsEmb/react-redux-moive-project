@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { useEffect } from 'react';
 import { initialMovies } from './containers/movie/movieSlice';
 import Home from "./containers/Home";
+import MoviesList from './containers/movie/MoviesList';
 
 function App() {
 
@@ -14,8 +15,8 @@ function App() {
 
   return (
     <div className="App bg-gray-800">
-      Hello
-      <Home />
+      {/* <Home /> */}
+      <MoviesList />
     </div>
   );
 }
