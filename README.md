@@ -34,11 +34,11 @@ This project will test your skills using Postman to explore the API and get the 
 - ~~Display the movie poster~~
 - ~~Display the movie name~~
 - ~~Display the movie rating~~
-- Display the movie genre
+- ~~Display the movie genre~~
 - ~~Tha ability to bookmark the movie.~~
 - ~~The ability to search for a specific movie.~~
-- Once you click on a movie, it will move you to the singe page of that movie.
-- Use lazy loading functionality. 
+- ~~Once you click on a movie, it will move you to the singe page of that movie.~~
+- ~~Use lazy loading functionality.~~
 
 ### Single Movie Page
 
