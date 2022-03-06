@@ -36,7 +36,7 @@ const moviesSlice = createSlice({
             state.bookmark.push(action.payload);
         },
         removeBookmark(state, action) {
-            state.bookmark.pop(action.payload);
+            state.bookmark = state.bookmark.filter(e => e.id !== action.payload);
         }
     },
     extraReducers: {

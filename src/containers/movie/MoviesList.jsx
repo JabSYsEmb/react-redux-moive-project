@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import MovieCard from "../../components/MovieCard";
+import Progressbar from "../../components/Progressbar";
 import { fetchMovie, fetchSearchMovie } from "./movieSlice";
 
 const MoviesList = () => {
@@ -26,18 +27,16 @@ const MoviesList = () => {
     }, []);
 
     if (status === "loading")
-        return <p>Loading</p>;
+        return <Progressbar />;
     else if (status === "failed")
-        return <p>Failed to fetch data</p>
+        return <h1 className="text-2xl text-white">Failed to fetch data</h1>;
 
-    console.log(movies);
-
-    return <div className="mx-auto">
+    return <div className="">
         <h1 className="text-4xl text-purple-800 text-center mb-6 font-bold p-6 shadow border-b-4 border-yellow-300 inline-block">Search Movies</h1>
-        <div class="flex items-center justify-center mb-12">
-            <div class="flex border-2 border-gray-200 rounded">
-                <input type="text" class="px-4 py-2 w-80" placeholder="Search..." onChange={handleOnChange} value={search} required />
-                <button class="px-4 text-white bg-gray-600 border-l" onClick={searchMovies}>
+        <div className="flex items-center justify-center mb-12">
+            <div className="flex border-2 border-gray-200 rounded">
+                <input type="text" className="px-4 py-2 w-80" placeholder="Search..." onChange={handleOnChange} value={search} required />
+                <button className="px-4 text-white bg-gray-600 border-l" onClick={searchMovies}>
                     Search
                 </button>
             </div>

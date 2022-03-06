@@ -25,9 +25,9 @@ This project will test your skills using Postman to explore the API and get the 
 
 ### Footer
 
-- Universal footer that include links to main pages in the website.
-- You and your partner names and links.
-- Anything you want to add.
+- ~~Universal footer that include links to main pages in the website.~~
+- ~~You and your partner names and links.~~
+- ~~Anything you want to add.~~
 
 ### Movies Page
 - ~~Display a list of movies.~~
@@ -42,14 +42,14 @@ This project will test your skills using Postman to explore the API and get the 
 
 ### Single Movie Page
 
-- Display the poster of the movie and a description.
-- Display 5 of the actors that played in the movie.
-- Display a section for related movies, at least 5.
-- Display the trailer of the movie.
-- Display the director name.
-- Display the movie rating and votes count.
-- Tha ability to bookmark the movie.
-- Once you click on an actor you move to their page.
+- ~~Display the poster of the movie and a description.~~
+- ~~Display 5 of the actors that played in the movie.~~
+- ~~Display a section for related movies, at least 5.~~
+- ~~Display the trailer of the movie.~~
+- ~~Display the director name.~~
+- ~~Display the movie rating and votes count.~~
+- ~~Tha ability to bookmark the movie.~~
+- ~~Once you click on an actor you move to their page.~~
 
 ### Actors Page
 - Display list of actors showing their name, and image same as movies page.
@@ -66,7 +66,7 @@ This project will test your skills using Postman to explore the API and get the 
 - Display a list of movies that the actor participated in.
 
 ### Bookmarked Page
-- Display the movies the user bookmarked. Only if they are signed in.
+- ~~Display the movies the user bookmarked. Only if they are signed in.~~
 
 # Instructions: 
 
