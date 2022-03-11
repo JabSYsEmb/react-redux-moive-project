@@ -14,3 +14,10 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+const btn = document.querySelector("#toggle-navbar");
+const menu = document.querySelector("#mobile-menu");
+
+btn.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+});

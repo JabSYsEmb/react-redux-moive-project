@@ -28,3 +28,11 @@ code {
   background-color: #a0aec0;
   /*outline: 1px solid slategrey;*/
 }
+.dropdown:hover .dropdown-menu {
+  /* display: block; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: stretch;
+  justify-items: stretch;
+  justify-content: stretch;
+}

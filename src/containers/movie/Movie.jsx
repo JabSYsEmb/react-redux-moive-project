@@ -29,7 +29,7 @@ const Movie = () => {
         <div className="md:w-1/4 lg:w-1/6">
             <img className="shadow-2xl rounded" src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`} alt={movie.title} />
         </div>
-        <div className="md:w-3/4 lg:w-5/6 pl-2 flex flex-col space-y-3">
+        <div className="md:w-3/4 lg:w-5/6 pl-2 flex flex-col space-y-3 items-center sm:items-start">
             <h1 className="text-3xl text-white">{movie.title}</h1>
             <h3>{movie.tagline}</h3>
             <p className="text-xs text-green-100">
@@ -39,10 +39,10 @@ const Movie = () => {
                 {movie.production_companies.map(e => `${e.name}, `)} ({movie.production_countries.map(e => `${e.name}`)})
             </p>
             <hr />
-            <span className="px-3 py-1 text-2xl rounded text-white bg-orange-400 inline-block w-14 text-center">
+            <span className="px-1 py-1 text-2sm rounded text-white bg-orange-400 inline-block w-12 text-center">
                 {parseFloat(movie.vote_average).toFixed(1)}
             </span>
-            <span>{movie.vote_count}</span>
+            <span className="text-white text-sm">Vote count: {movie.vote_count}</span>
             <hr />
             <span>{movie.genres.map(e => e.name).join(" | ")}</span>
         </div>

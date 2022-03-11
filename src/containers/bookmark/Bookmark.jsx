@@ -18,7 +18,7 @@ const Bookmark = () => {
         return <h1 className="text-2xl text-white">The bookmark is empty, You did't add any movies to bookmark list yet.</h1>
     }
 
-    return <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center">
+    return <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center mt-10">
         {bookList.map(movie => {
             return (
                 <div className="py-6 flex flex-col justify-center sm:py-12 text-left">
@@ -26,7 +26,7 @@ const Bookmark = () => {
                         <div className="bg-white shadow-lg border-gray-100 max-h-80 border sm:rounded-3xl p-8 flex space-x-8">
                             <div className="overflow-visible w-1/2 relative">
                                 <Link to={`/movies/${movie.id}`}>
-                                    <img className="absolute bottom-0 rounded-3xl shadow-lg" src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${movie.poster_path}`} alt={movie.title} />
+                                    <img className="absolute bottom-0 rounded-3xl shadow-lg" src={movie.poster_path ? `https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${movie.poster_path}` : "https://via.placeholder.com/600x900"} alt={movie.title} />
                                 </Link>
                             </div>
                             <div className="flex flex-col w-1/2 space-y-4">

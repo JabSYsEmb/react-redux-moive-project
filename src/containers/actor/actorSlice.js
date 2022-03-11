@@ -6,7 +6,7 @@ const initialState = {
     error: null
 }
 
-const fetchActors = createAsyncThunk(
+export const fetchActors = createAsyncThunk(
     "actors/fetchActors",
     (p = 1) => {
         return fetch(`${process.env.REACT_APP_API_URI}/3/person/popular?api_key=${process.env.REACT_APP_API_KEY}&page=${p}`)
@@ -21,7 +21,7 @@ const actorsSlice = createSlice({
     extraReducers: {
         [fetchActors.fulfilled](state, action) {
             state.status = "succeeded";
-            state.actors = action.payload;
+            state.actors = action.payload.results;
         },
         [fetchActors.pending](state) {
             state.status = "loading";
