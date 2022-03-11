@@ -19,7 +19,6 @@ const Home = () => {
             })}
         </div>
         <h1 className="text-4xl text-purple-800 text-left mb-6 bg-white font-bold p-6 shadow"><span className="inline-block align-middle h-14 w-2 bg-yellow-300"></span> Trending Movies</h1>
-        <h3></h3>
         <div className="grid grid-cols-4 justify-items-center">
             {trending.map(movie => {
                 return <MovieCard key={movie.id} movie={movie} />

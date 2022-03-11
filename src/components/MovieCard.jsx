@@ -24,6 +24,8 @@ const MovieCard = ({ movie }) => {
                 <span className="absolute px-2 left-1 top-1 rounded text-white bg-orange-400 inline-block">
                     {parseFloat(movie.vote_average).toFixed(1)}
                 </span>
+                {isBookmark &&
+                    <i class="fas fa-heart bg-white text-red-800 p-2 rounded absolute top-1 right-1"></i>}
                 <Link to={`/movies/${movie.id}`}>
                     <p className="bg-gray-400 bg-opacity-80 transition duration-500 opacity-0 group-hover:opacity-100 absolute inset-0 z-10 flex flex-col justify-center items-center text-center text-1xl text-white px-4">
                         <span className="font-bold text-2xl">{movie.title}</span>

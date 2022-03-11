@@ -52,7 +52,7 @@ const Actor = () => {
                 {actor.movies.cast.map(mov => {
                     return <div key={actor.cast_id} className="flex-shrink-0 w-20 mx-3 text-center">
                         <Link to={`/movies/${mov.id}`}>
-                            <img className="" src={mov.poster_path ? `https://image.tmdb.org/t/p/w200/${mov.poster_path}` : `https://via.placeholder.com/200x300`} />
+                            <img src={mov.poster_path ? `https://image.tmdb.org/t/p/w200/${mov.poster_path}` : `https://via.placeholder.com/200x300`} alt={mov.title} />
                             <p className="text-xs text-white mt-1">{mov.title}</p>
                         </Link>
                         <h1 className="mt-1 text-xs">{mov.name}</h1>

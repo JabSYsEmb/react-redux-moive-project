@@ -18,11 +18,9 @@ const ActorsList = () => {
     else if (status === "failed")
         return <h1 className="text-2xl text-white">Failed to fetch data</h1>;
 
-    console.log(actors);
-
     return <div className="grid grid-cols-1 justify-items-center xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3">
         {actors.map(act => {
-            return <ActorCard actor={act} />
+            return <ActorCard key={act.id} actor={act} />
         })}
     </div>;
 }

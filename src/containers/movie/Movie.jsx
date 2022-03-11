@@ -20,7 +20,7 @@ const Movie = () => {
         ]).then((data) => {
             setMovie({ ...data[0], actors: data[1] })
         });
-    }, [movieId.id]);
+    }, [movieId.id, navigate]);
 
     if (movie === null)
         return <Progressbar />;
@@ -56,7 +56,7 @@ const Movie = () => {
                 {movie.actors.cast.filter(e => e.profile_path !== null && e.known_for_department === "Acting").map(actor => {
                     return <div key={actor.cast_id} className="flex-shrink-0 w-20 mx-3 text-center">
                         <Link to={`/actors/${actor.id}`}>
-                            <img className="" src={`https://image.tmdb.org/t/p/w200/${actor.profile_path}`} />
+                            <img className="" src={`https://image.tmdb.org/t/p/w200/${actor.profile_path}`} alt={actor.name} />
                         </Link>
                         <h1 className="mt-1 text-xs">{actor.name}</h1>
                     </div>
